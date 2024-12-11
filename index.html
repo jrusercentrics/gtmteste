@@ -1,5 +1,37 @@
 <html>
   <head>
+    <script>
+window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    // EU-specific settings
+    gtag('consent', 'default', {
+        'ad_personalization': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'analytics_storage': 'denied',
+        'functionality_storage': 'denied',
+        'personalization_storage': 'denied',
+        'region': [
+          'PT'
+        ],
+        'wait_for_update': 500,
+    });
+    // Default settings
+    gtag('consent', 'default', {
+        'ad_personalization': 'granted',
+        'ad_storage': 'granted',
+        'ad_user_data': 'denied',
+        'analytics_storage': 'granted',
+        'functionality_storage': 'granted',
+        'personalization_storage': 'granted',
+        'security_storage': 'granted',
+        'wait_for_update': 500,
+    });
+    gtag('set', 'ads_data_redaction', true);
+    gtag('set', 'url_passthrough', false);
+    </script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
